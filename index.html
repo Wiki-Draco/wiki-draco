@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/VeilleursLogo.png" />
+  <title>[VCL] - Patchnotes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Cinzel:wght@600;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Fond ambiant -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="moon"></div>
+    <div class="fog fog-1"></div>
+    <div class="fog fog-2"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header class="site-header">
+
+    <!-- Ligne supérieure : logo + contrôles -->
+    <div class="header-top">
+      <div class="header-left">
+        <div class="traffic-lights">
+          <span class="tl tl-red"></span>
+          <span class="tl tl-yellow"></span>
+          <span class="tl tl-green"></span>
+        </div>
+        <span class="header-sep">─────</span>
+        <a href="index.html" class="header-logo">Veilleurs au Clair de Lune</a>
+      </div>
+      <div class="header-right">
+        <span class="entry-count" id="entry-count">— versions</span>
+        <button id="filter-toggle" class="filter-toggle-btn">filtrer ↓</button>
+      </div>
+    </div>
+
+    <!-- Navigation principale -->
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">
+        <span class="nav-icon">📜</span>
+        <span class="nav-label">Patchnotes</span>
+      </a>
+      <a href="map.html" class="nav-link">
+        <span class="nav-icon">🗺️</span>
+        <span class="nav-label">Carte</span>
+      </a>
+      <a href="compendium.html" class="nav-link">
+        <span class="nav-icon">📖</span>
+        <span class="nav-label">Compendium</span>
+      </a>
+      <a href="atelier.html" class="nav-link">
+        <span class="nav-icon">🔨</span>
+        <span class="nav-label">Atelier</span>
+      </a>
+      <a href="wiki.html" class="nav-link">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Wiki</span>
+      </a>
+    </nav>
+
+    <!-- Barre de filtres -->
+    <div id="filter-bar" class="filter-bar hidden">
+      <button class="filter-btn active" data-filter="all">tout</button>
+      <button class="filter-btn" data-filter="added">✅ ajouté</button>
+      <button class="filter-btn" data-filter="changed">✏️ modifié</button>
+      <button class="filter-btn" data-filter="removed">❌ supprimé</button>
+    </div>
+
+  </header>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="hero">
+    <div class="hero-label"><span class="blink">▌</span> journal des modifications</div>
+    <h1 class="hero-title">PATCH<br /><span class="hero-title-outline">NOTES</span></h1>
+    <div class="hero-guild">
+      <span class="hero-ornament">——</span>
+      <span class="hero-guild-name">🌙 Veilleurs au Clair de Lune 🌙</span>
+      <span class="hero-ornament">——</span>
+    </div>
+    <p class="hero-sub">
+      « Nous sommes le bouclier dressé face à l'obscurité. Nous sommes la lanterne qui guide les égarés »
+    </p>
+  </section>
+
+  <!-- ══════════════════════ TIMELINE ══════════════════════ -->
+  <main class="timeline" id="timeline">
+
+    <!-- ── v1.3.0 ── -->
+    <article class="patch-entry open" data-version="1.3.0">
+      <div class="version-header" role="button" tabindex="0" aria-expanded="true">
+        <span class="version-tag">v1.3.0</span>
+        <span class="version-name">Graphic Update</span>
+        <time class="version-date">2026-03-15</time>
+        <span class="chevron" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Nouveaux Liens en direction des items de métier ou exclusifs à un marchand / forgeron</li>
+            <li>Visuels Manquants des dernières Armes &amp; Panoplies <span class="palier palier-1">Palier 1</span>
+              <ul class="change-list change-list-sub">
+                <li>Bâton Sylvestre Mage</li>
+                <li>Bâton de Squelette Maudit Shaman</li>
+                <li>Bâton de Squelette Maudit Mage</li>
+                <li>Panoplie du Magicien</li>
+                <li>Armes Kobold</li>
+              </ul>
+            </li>
+            <li>Visuels des Accessoires <span class="palier palier-1">Palier 1</span></li>
+            <li>Accessoires Manquants ou Nouveaux <span class="palier palier-1">Palier 1</span></li>
+            <li>Derniers Repreneurs de Butins <span class="palier palier-1">Palier 1</span></li>
+            <li>Nouveaux Monstres et certains de leurs Visuels <span class="palier palier-2">Palier 2</span></li>
+            <li>Personnages Importants <span class="palier palier-2">Palier 2</span>
+              <ul class="change-list change-list-sub">
+                <li>Repreneurs de Butins</li>
+                <li>Forgerons d'Accessoires &amp; de Lingots</li>
+                <li>Marchands d'Outils, d'Accessoires &amp; d'Équipements</li>
+                <li>Alchimistes</li>
+                <li>Bûcherons</li>
+                <li>Fabricants de Clefs &amp; Fabricants Secrets</li>
+              </ul>
+            </li>
+            <li>Outils et leurs Visuels <span class="palier palier-2">Palier 2</span></li>
+            <li>Guide et Lieu des Ressources métier — Mineur / Bûcheron / Herboriste <span class="palier palier-2">Palier 2</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="changed">
+          <span class="tag tag-changed">✏️ modifié</span>
+          <ul class="change-list">
+            <li>Patchnote du <code>12/03/2026</code> appliqué</li>
+            <li>Modification Graphique des Armes &amp; certaines Panoplies jugées trop faibles visuellement <span class="palier palier-1">Palier 1</span></li>
+            <li>Quêtes Secondaires finies <span class="palier palier-2">Palier 2</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="removed">
+          <span class="tag tag-removed">❌ supprimé</span>
+          <ul class="change-list">
+            <li>Éradication d'Erreurs Typographiques répétées</li>
+            <li>Lissages des Textes</li>
+            <li>Corrections des liens morts</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="sep"></div>
+
+    <!-- ── v1.2.3 ── -->
+    <article class="patch-entry" data-version="1.2.3">
+      <div class="version-header version-header-old" role="button" tabindex="0" aria-expanded="false">
+        <span class="version-tag version-tag-old">v1.2.3</span>
+        <span class="version-name version-name-old">Complete Update</span>
+        <time class="version-date">2026-03-06</time>
+        <span class="chevron chevron-closed" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body hidden">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Nouvel Onglet Panoplie <span class="palier palier-1">Palier 1</span>
+              <ul class="change-list change-list-sub">
+                <li>Permet de visualiser les différentes Panoplies disponibles dans cet étage</li>
+                <li>Répertorie tous les Accessoires d'une Panoplie donnée</li>
+              </ul>
+            </li>
+            <li>Début des Quêtes Principales <span class="palier palier-2">Palier 2</span></li>
+            <li>Majorité des Quêtes Secondaires <span class="palier palier-2">Palier 2</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="changed">
+          <span class="tag tag-changed">✏️ modifié</span>
+          <ul class="change-list">
+            <li>Mise à jour du Logo de la Guilde et du Wiki</li>
+            <li>Patchnote du <code>05/03/2026</code> appliqué</li>
+            <li>Rajout d'une partie des Armes Kobold <span class="palier palier-1">Palier 1</span></li>
+            <li>Rajout de certains Accessoires Secrets et leur moyen d'obtention <span class="palier palier-1">Palier 1</span></li>
+            <li>Meilleur système de liens <span class="palier palier-1">Palier 1</span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="sep"></div>
+
+    <!-- ── v1.2.2 ── -->
+    <article class="patch-entry" data-version="1.2.2">
+      <div class="version-header version-header-old" role="button" tabindex="0" aria-expanded="false">
+        <span class="version-tag version-tag-old">v1.2.2</span>
+        <span class="version-name version-name-old">Road to Floor 2 Update</span>
+        <time class="version-date">2026-02-26</time>
+        <span class="chevron chevron-closed" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body hidden">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Nouvelles Entrées d'Événements</li>
+            <li>Nouveaux Accessoires <span class="palier palier-1">Palier 1</span></li>
+            <li>Outils <span class="palier palier-1">Palier 1</span></li>
+            <li>Nouvel Onglet du Palier 2 <span class="palier palier-2">Palier 2</span></li>
+            <li>Régions &amp; ses Visuels <span class="palier palier-2">Palier 2</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="changed">
+          <span class="tag tag-changed">✏️ modifié</span>
+          <ul class="change-list">
+            <li>La Majorité des Armes et Panoplies ont une Texture de Référence <span class="palier palier-1">Palier 1</span></li>
+            <li>Meilleurs Liens entre les Ressources <span class="palier palier-1">Palier 1</span></li>
+            <li>Onglet Ressources <span class="palier palier-1">Palier 1</span>
+              <ul class="change-list change-list-sub">
+                <li>Le Métier Fermier devient Herboriste (comme dans le jeu)</li>
+                <li>Guide de Ressources Mineur / Bûcheron / Herboriste</li>
+                <li>Indications Visuelles</li>
+                <li>Nombre approximatif de ressources par zone</li>
+                <li>Coordonnées des lieux des Ressources</li>
+                <li>Guide sur le Métier de Bûcheron</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="removed">
+          <span class="tag tag-removed">❌ supprimé</span>
+          <ul class="change-list">
+            <li>Suppressions d'onglets obsolètes ou inutiles <span class="palier palier-1">Palier 1</span></li>
+            <li>Erreurs de liens et d'Orthographe</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="sep"></div>
+
+    <!-- ── v1.2.1 ── -->
+    <article class="patch-entry" data-version="1.2.1">
+      <div class="version-header version-header-old" role="button" tabindex="0" aria-expanded="false">
+        <span class="version-tag version-tag-old">v1.2.1</span>
+        <span class="version-name version-name-old">Extension Update</span>
+        <time class="version-date">2026-02-26</time>
+        <span class="chevron chevron-closed" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body hidden">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Page de Sommaire</li>
+            <li>Page Événement regroupant
+              <ul class="change-list change-list-sub">
+                <li>Armes</li>
+                <li>Accessoires</li>
+                <li>Runes</li>
+                <li>Événements Halloween / Noël / Saint Valentin / Nouvel An Chinois</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="sep"></div>
+
+    <!-- ── v1.2.0 ── -->
+    <article class="patch-entry" data-version="1.2.0">
+      <div class="version-header version-header-old" role="button" tabindex="0" aria-expanded="false">
+        <span class="version-tag version-tag-old">v1.2.0</span>
+        <span class="version-name version-name-old">Rush Floor 1 Update</span>
+        <time class="version-date">2026-02-25</time>
+        <span class="chevron chevron-closed" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body hidden">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Nouvelles Armes <span class="palier palier-1">Palier 1</span></li>
+            <li>Nouveaux Accessoires <span class="palier palier-1">Palier 1</span></li>
+            <li>Guide des Donjons <span class="palier palier-1">Palier 1</span></li>
+            <li>Visuels des Monstres <span class="palier palier-1">Palier 1</span></li>
+            <li>Visuels des Régions <span class="palier palier-1">Palier 1</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="changed">
+          <span class="tag tag-changed">✏️ modifié</span>
+          <ul class="change-list">
+            <li>Indications du Niveau théorique requis et la taille d'un groupe pour les Donjons <span class="palier palier-1">Palier 1</span></li>
+            <li>Indications du Niveau théorique requis pour les Monstres <span class="palier palier-1">Palier 1</span></li>
+          </ul>
+        </div>
+        <div class="change-group" data-type="removed">
+          <span class="tag tag-removed">❌ supprimé</span>
+          <ul class="change-list">
+            <li>Corrections d'Erreurs d'Orthographe</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <div class="sep"></div>
+
+    <!-- ── v1.1.0 ── -->
+    <article class="patch-entry" data-version="1.1.0">
+      <div class="version-header version-header-old" role="button" tabindex="0" aria-expanded="false">
+        <span class="version-tag version-tag-old">v1.1.0</span>
+        <span class="version-name version-name-old">Wiki Initialisation Update</span>
+        <time class="version-date">2026-02-21</time>
+        <span class="chevron chevron-closed" aria-hidden="true">▼</span>
+      </div>
+      <div class="patch-body hidden">
+        <div class="change-group" data-type="added">
+          <span class="tag tag-added">✅ ajouté</span>
+          <ul class="change-list">
+            <li>Début de la Création du Wiki
+              <ul class="change-list change-list-sub">
+                <li>Monstres <span class="palier palier-1">Palier 1</span></li>
+                <li>Régions <span class="palier palier-1">Palier 1</span></li>
+                <li>Quêtes Principales &amp; Secondaires <span class="palier palier-1">Palier 1</span></li>
+                <li>Équipements <span class="palier palier-1">Palier 1</span></li>
+                <li>Accessoires <span class="palier palier-1">Palier 1</span></li>
+              </ul>
+            </li>
+            <li>Page d'Introduction au Wiki</li>
+            <li>Premiers Visuels des Monstres <span class="palier palier-1">Palier 1</span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="site-footer">
+    <span class="footer-guild">Veilleurs au Clair de Lune ©</span>
+    <span class="footer-date" id="footer-date"></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
