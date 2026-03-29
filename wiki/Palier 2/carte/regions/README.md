@@ -1,6 +1,0 @@
----
-icon: wagon-covered
----
-
-# Régions
-

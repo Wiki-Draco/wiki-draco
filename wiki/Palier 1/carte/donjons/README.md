@@ -1,6 +1,0 @@
----
-icon: dungeon
----
-
-# Donjons
-

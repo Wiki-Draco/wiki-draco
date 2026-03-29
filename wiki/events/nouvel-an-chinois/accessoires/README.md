@@ -1,6 +1,0 @@
----
-icon: ring
----
-
-# Accessoires
-

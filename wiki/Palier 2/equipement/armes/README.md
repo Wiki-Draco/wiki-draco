@@ -1,5 +1,0 @@
----
-icon: swords
----
-
-# Armes
